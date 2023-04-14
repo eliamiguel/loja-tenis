@@ -6,6 +6,10 @@
   /*font-family: 'Roboto', sans-serif;
   #008F8C*/
 }
+::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
 body{
   background-color: #ccc;
 }
