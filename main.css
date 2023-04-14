@@ -1,0 +1,199 @@
+@charset "UTF-8"; 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: 'Roboto', sans-serif;
+  #008F8C*/
+}
+body{
+  background-color: #ccc;
+}
+.container{
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+header{
+  background-color: #008F8C;
+  padding:10px 0;
+}
+header ul{
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+header h1{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  
+}
+header li a {
+  text-decoration: none;
+  padding-right:16px ;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 1.2em;
+}
+.sobre-loja img{
+  width: 100%;
+  height: 400px;
+}
+.sobre-loja{
+  display: grid;
+  grid-template-columns: repeat(2, 49.5%);
+  column-gap: 2%;
+  margin-top: 56px;
+  padding-bottom: 50px;
+}
+section h2{
+  color: #008F8C;
+  border-bottom: 2px solid #008F8C;
+  padding-bottom:10px;
+  font-family: 'Roboto', sans-serif;
+}
+header a:hover{
+  color:#2cddda ;
+
+}
+#pesquisar{
+flex-grow: 7;
+text-align: center;
+
+}
+#pesquisar input{
+  width: 70%;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+#pesquisar button{
+  padding: 5px;
+  border-radius: 10px ;
+  cursor: pointer;
+  background-color: #008F8C;
+  color: white;
+  border-color: white;
+  font-size: 1em;
+  outline: none;
+
+}
+#pesquisar button:focus{
+  outline-color: white;
+}
+.sobre-loja p{
+  padding-top:30px;
+  text-align: justify;
+  line-height: 1.5em;
+}
+.produtos{
+  padding-bottom: 30px;
+  
+}
+.produtos ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  column-gap: 1%;
+
+}
+.produtos ul img{
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  
+}
+.produtos ul li button{
+  background-color: #008F8C;
+  color: white;
+  padding: 8px;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.produtos ul li button:hover{
+  background-color: #2cddda;
+}
+
+.produtos li p{
+  font-size: 0.9em;
+  padding: 10px 0;
+  text-align: justify;
+}
+.NomeTenis{
+  font-size: 1.3em;
+
+}
+.produtos span{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+footer{
+  background-color: #008F8C;
+  text-align: center;
+  padding: 20px;
+}
+footer p{
+  font-weight: bold;
+  color: white;
+}
+/*---------------- Media query -------------------*/
+@media screen and (max-width: 640px){
+  .sobre-loja{
+    display: block;
+    margin-top: 56px;
+    padding-bottom: 50px;
+  }
+  .container{
+    width: 640px;
+    width: 85vw;
+  }
+  header ul{
+    display: block;
+  }
+  .sobre-loja img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+  .produtos ul{
+    display: block;
+    margin-bottom: 50px;  
+  }
+}
+@media screen and (min-width:641px) and (max-width:992px){
+  
+  .container{
+    display: block;
+    width: 90vw;
+    margin: 0 auto;
+   
+  }
+  .sobre-loja img{
+    width: 100%;
+
+    
+  }
+  .sobre-loja img{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .produtos ul{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 2%;
+  }
+}
